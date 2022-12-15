@@ -1,4 +1,11 @@
 # simple Service
+# npx @open-wa/wa-automate --socket -p 8085 -k "0B2FDC9C-FADF48A9-92E5F3D1-D2CDA55A"
+# python3 simple.py
+
+# from test import *
+# water.Simple.send(number="972543610404", msg="Hello from simple.py")
+# water.Simple.send(number="972547932000", msg="Hello from simple.py")
+
 ######################################    imports and setup    ####################################################
 # Wa Automate Docs: 
 # https: // openwa.dev/docs/api/classes/api_Client.Client
@@ -40,8 +47,9 @@ def setGroupApp(group_id, app, *args, **kwargs):
 	# Change group name to app name
 	simple._client.setGroupTitle(group_id, simple._apps[app]["name"])
 	# simple._client.setGroupIconByUrl(simple._groups[group]["id"], simple._apps[app]["icon_url"])
-	simple._client.setGroupDescription(group_id, simple._apps[app]["description"])
-	print("@@@@@@@@@@@@@@@@@@ setGroupApp: ", group_id)
+	# simple._client.setGroupDescription(group_id, simple._apps[app]["description"])
+	print("@@@@@@@@@@@@@@@@@@ setGroupApp: ",
+	      group_id,simple._apps[app]["name"], simple._apps[app]["description"])
 	return True
 
 @Simple
@@ -56,6 +64,7 @@ def createGroup(Name = " ::: Test ::: ",participants = ["972543610404@c.us"], *a
 	print("invite link: ", res["invite_link"])	
 	res["info"] = simple._client.inviteInfo(res["invite_link"])
 	print("info : ", res["info"])	
+	simple._client.setGroupTitle(res["wid"]["_serialized"], "XXXXXXXXXXXXXXX")
 	return res
 
 @Simple
@@ -154,8 +163,9 @@ if __name__ == "__main__":
 	# water.logs.info('::: Starting simple Service on port')
 
 	number = '972547932000@c.us'
-
-	simple._client = SocketClient('http://localhost:8085/', 'secure_api_key')
+	secure = "0B2FDC9C-FADF48A9-92E5F3D1-D2CDA55A"
+	# secure = "secure_api_key"
+	simple._client = SocketClient('http://localhost:8085/', secure)
 
 
 	def printResponse(message):
