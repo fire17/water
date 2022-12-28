@@ -65,6 +65,8 @@ def createGroup(Name = " ::: Test ::: ",participants = ["972543610404@c.us"], *a
 	res["info"] = simple._client.inviteInfo(res["invite_link"])
 	print("info : ", res["info"])	
 	simple._client.setGroupTitle(res["wid"]["_serialized"], "XXXXXXXXXXXXXXX")
+	time.sleep(1)
+	print(send(number = res["wid"]["_serialized"], msg = "Welcome to "+Name + " service !"))
 	return res
 
 @Simple

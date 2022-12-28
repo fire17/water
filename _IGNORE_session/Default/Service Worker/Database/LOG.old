@@ -1,2 +1,3 @@
-2022/12/14-23:01:23.417 1fae Creating DB /workspaces/water/_IGNORE_session/Default/Service Worker/Database since it was missing.
-2022/12/14-23:01:23.468 1fae Reusing MANIFEST /workspaces/water/_IGNORE_session/Default/Service Worker/Database/MANIFEST-000001
+2022/12/14-23:05:23.093 2a54 Reusing MANIFEST /workspaces/water/_IGNORE_session/Default/Service Worker/Database/MANIFEST-000001
+2022/12/14-23:05:23.093 2a54 Recovering log #3
+2022/12/14-23:05:23.093 2a54 Reusing old log /workspaces/water/_IGNORE_session/Default/Service Worker/Database/000003.log 

@@ -1,3 +1,9 @@
-2022/12/14-23:05:23.087 2a54 Reusing MANIFEST /workspaces/water/_IGNORE_session/Default/Local Storage/leveldb/MANIFEST-000001
-2022/12/14-23:05:23.087 2a54 Recovering log #3
-2022/12/14-23:05:23.088 2a54 Reusing old log /workspaces/water/_IGNORE_session/Default/Local Storage/leveldb/000003.log 
+2022/12/15-14:34:46.451 2433 Reusing MANIFEST /workspaces/water/_IGNORE_session/Default/Local Storage/leveldb/MANIFEST-000001
+2022/12/15-14:34:46.462 2433 Recovering log #3
+2022/12/15-14:34:46.462 2433 Reusing old log /workspaces/water/_IGNORE_session/Default/Local Storage/leveldb/000003.log 
+2022/12/15-14:36:46.978 2437 Level-0 table #5: started
+2022/12/15-14:36:46.992 2437 Level-0 table #5: 27414 bytes OK
+2022/12/15-14:36:47.013 2437 Delete type=0 #3
+2022/12/15-16:57:49.859 79b0 Level-0 table #7: started
+2022/12/15-16:57:49.875 79b0 Level-0 table #7: 23431 bytes OK
+2022/12/15-16:57:49.894 79b0 Delete type=0 #4
